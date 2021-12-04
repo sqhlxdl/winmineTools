@@ -21,7 +21,7 @@ namespace winmineTools
         private void btnStart_Click(object sender, EventArgs e)
         {
             memory.OpenProcess("winmine");
-            if (memory.theProc==null || memory.pHandle==null)
+            if (memory.theProc == null || memory.pHandle == null)
             {
                 MessageBox.Show("扫雷(winmine)游戏未运行！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
